@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- HEADER -->
+
+    <header class="main-header">
+
+      <div class="main-banner__wrap">
+        <div class="container">
+          <div class="main-banner">
+            <div class="hamburger">
+              <svg class="hamburger__icon" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 17h18v-2H2v2zm0-5h18v-2H2v2zm0-7v2h18V5H2z" />
+              </svg>
+            </div>
+
+            <div class="logo--wrap">
+              <a href="#" class="logo">
+                <img src="./img/logo.png" alt="Логотип Росстандарта" class="logo__image" />
+                <div class="logo__text">
+                  <div id="js-logo-title" class="logo__title">Росстандарт</div>
+                  <div id="js-logo-description" class="logo__description">
+                    Федеральное агентство по техническому регулированию и метрологии
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="datetime uninitialized">
+              <div class="datetime__calendar">
+                <div class="datetime__day"><span id="d">1</span> <span id="mon">January</span> <span id="y">2020</span>
+                </div>
+                <div class="datetime__day-of-week"><span id="wee">1</span></div>
+              </div>
+              <div class="datetime__clock notranslate">
+                <span id="h">0</span>
+                <span class="separator">:</span>
+                <span id="m">0</span>
+                <span class="separator">:</span>
+                <span id="s">0</span>
+                <span class="separator">,</span>
+                <span id="mi">0</span>
+              </div>
+              <div class="datetime__timezone">Московское время</div>
+            </div>
+
+            <div class="actions">
+              <div class="actions__login">
+                <a href="#" class="button button--icon">
+                  <img src="./img/login.svg" alt="have not alt" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-menu__wrap">
+        <nav class="container">
+          <ul class="nav-menu">
+            <li class="nav-menu__item nav-menu__logo">
+              <a href="#" class="button button--icon">
+                <img src="./img/logo.png" alt="Логотип Росстандарта">
+              </a>
+            </li>
+
+            <li class="nav-menu__item ">
+              <a href="#"> О
+                Росстандарте</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Историческая
+                          справка</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Официальная
+                          символика
+                          Росстандарта</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Предмет
+                          деятельности
+                          Росстандарта</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Руководство</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Территориальные
+                          органы</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Управления</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Подведомственные
+                          организации</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Общественный
+                          совет</a>
+                      </li>
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Меры
+                          государственной
+                          поддержки</a>
+                      </li>
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/about.png)"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-menu__item ">
+              <a href="#">Деятельность</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <div class="nav-menu__dropdown-inner">
+                      <ul class="nav-menu__dropdown-list">
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Основные
+                            задачи и
+                            показатели
+                            эффективности</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Документы,
+                            приказы и
+                            отчёты</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Государственные
+                            программы РФ и
+                            планы работ</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Государственные
+                            закупки</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Кадровая
+                            работа
+                            (госслужба)</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Противодействие
+                            коррупции</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Международное
+                            сотрудничество</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Информатизация</a>
+                        </li>
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Разъяснения</a>
+                        </li>
+
+                      </ul>
+
+                      <div class="nav-menu__dropdown-title">Направления</div>
+
+                      <ul class="nav-menu__dropdown-list">
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Техническое
+                            регулирование</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Стандартизация</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Метрология</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Подтверждение
+                            соответствия</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Наилучшие
+                            доступные
+                            технологии
+                            (НДТ)</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Государственный
+                            контроль
+                            (надзор)</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Классификация
+                            и
+                            каталогизация</a>
+                        </li>
+
+
+                        <li class="nav-menu__dropdown-item ">
+                          <a href="#">Внутренний
+                            финансовый
+                            аудит</a>
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="nav-menu__img" style="background-image: url(./img/activity.png)"></div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+            </li>
+
+            <li class="nav-menu__item ">
+              <a href="#">Услуги</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Утверждение
+                          типа
+                          стандартных
+                          образцов или
+                          типа средств
+                          измерений</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Контрольно-надзорные
+                          функции</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Государственные
+                          функции
+                          Росстандарта</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Ведение
+                          единого
+                          реестра систем
+                          добровольной
+                          сертификации</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Предоставление
+                          документов и
+                          сведений,
+                          содержащихся в
+                          Федеральном
+                          информационном
+                          фонде по
+                          обеспечению
+                          единства
+                          измерений</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Отнесение
+                          технических
+                          средств к
+                          средствам
+                          измерений</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Предоставление информации из
+                          федерального
+                          информационного
+                          фонда
+                          технических
+                          регламентов и
+                          стандартов</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Прием и
+                          учет
+                          уведомлений о
+                          начале
+                          осуществления
+                          производства
+                          приборов и
+                          аппаратуры</a>
+                      </li>
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/services.png)"></div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="nav-menu__item ">
+
+              <a href="#">Стандарты
+                и регламенты</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Каталог
+                          национальных
+                          стандартов</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Каталог
+                          межгосударственных
+                          стандартов</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Действующие
+                          технические
+                          регламенты</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Каталог
+                          международных
+                          стандартов ИСО
+                          и МЭК</a>
+                      </li>
+
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/standarts.png)">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="nav-menu__item ">
+
+              <a href="#">Сервисы</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Открытые
+                          данные</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Государственный
+                          кадастр
+                          гражданского и
+                          служебного
+                          оружия и
+                          патронов к
+                          нему</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Отзывные
+                          кампании
+                          транспортных
+                          средств</a>
+                      </li>
+
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/systems.png)"></div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="nav-menu__item ">
+
+              <a href="#">Обратная
+                связь</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Информация
+                          об обращениях
+                          граждан и
+                          порядке
+                          обжалования</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Порядок
+                          обжалования</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Личный
+                          прием граждан</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Общественные
+                          обсуждения</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Вопросы
+                          и ответы</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Пройти
+                          опрос</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Форум</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Статистика</a>
+                      </li>
+
+
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/feedback.png)"></div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="nav-menu__item ">
+
+              <a href="#">Пресс-служба</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Новости</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Публикации
+                          в СМИ</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Коротко</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Контакты
+                          для СМИ</a>
+                      </li>
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Отзывные
+                          программы</a>
+                      </li>
+
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/presscenter.png)">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="nav-menu__item ">
+
+              <a href="#">Контакты</a>
+              <div class="nav-menu__dropdown-container">
+                <div class="container">
+
+                  <div class="nav-menu__dropdown-wrap">
+                    <ul class="nav-menu__dropdown-list">
+
+                      <li class="nav-menu__dropdown-item ">
+                        <a href="#">Контакты
+                          Росстандарта</a>
+                      </li>
+
+                    </ul>
+                    <div class="nav-menu__img" style="background-image: url(./img/contacts.png)"></div>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- // HEADER -->

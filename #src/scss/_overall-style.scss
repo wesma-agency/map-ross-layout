@@ -1,0 +1,396 @@
+body {
+	background: #fff;
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.3px;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	flex: 1 0 auto;
+	max-width: 1280px;
+	padding: 0 20px;
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.title-h1,
+h1 {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 120%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #2c3756;
+}
+
+.main-btn {
+	display: block;
+	padding: 10px 22px 12px 22px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 130%;
+	letter-spacing: 0.04em;
+	color: #2aac4a;
+	border: 1px solid #2aac4a;
+	border-radius: 100px;
+	text-align: center;
+}
+
+.button,
+a.button,
+.ui-button,
+.ui-button.ui-state-default {
+	border-radius: 100px;
+	padding: 13px 20px;
+	text-align: center;
+	min-width: 120px;
+	font-size: 20px;
+	line-height: 1;
+	font-weight: bold;
+	font-family: "PT Sans", sans-serif;
+	color: #2aac4a;
+	background-color: #fff;
+	border: solid 1px #2aac4a;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	height: auto;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	white-space: nowrap;
+}
+
+.button svg,
+a.button svg,
+.ui-button svg,
+.ui-button.ui-state-default svg {
+	width: 100%;
+	height: 100%;
+}
+
+.button + .button,
+a.button + .button,
+.ui-button + .button,
+.ui-button.ui-state-default + .button,
+.button + a.button,
+a.button + a.button,
+.ui-button + a.button,
+.ui-button.ui-state-default + a.button,
+.button + .ui-button,
+a.button + .ui-button,
+.ui-button + .ui-button,
+.ui-button.ui-state-default + .ui-button,
+.button + .ui-button.ui-state-default,
+a.button + .ui-button.ui-state-default,
+.ui-button + .ui-button.ui-state-default,
+.ui-button.ui-state-default + .ui-button.ui-state-default {
+	margin-left: 10px;
+}
+
+.button:hover,
+a.button:hover,
+.ui-button:hover,
+.ui-button.ui-state-default:hover {
+	border-color: #33bd55;
+	background-color: #fff;
+	color: #33bd55;
+	-webkit-transition: background 0.3s;
+	-o-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+.button:active,
+.active .button,
+a.button:active,
+.active a.button,
+.ui-button:active,
+.active .ui-button,
+.ui-button.ui-state-default:active,
+.active .ui-button.ui-state-default {
+	border-color: #259541;
+	background-color: #fff;
+	color: #259541;
+	-webkit-transition: background 0.3s;
+	-o-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+.button:disabled,
+.button[disabled],
+.button--disabled,
+.button.disabled,
+a.button:disabled,
+a.button[disabled],
+a.button--disabled,
+a.button.disabled,
+.ui-button:disabled,
+.ui-button[disabled],
+.ui-button--disabled,
+.ui-button.disabled,
+.ui-button.ui-state-default:disabled,
+.ui-button.ui-state-default[disabled],
+.ui-button.ui-state-default--disabled,
+.ui-button.ui-state-default.disabled {
+	border-color: #c9ced4;
+	color: #c9ced4;
+	cursor: default;
+	pointer-events: none;
+}
+
+.button--primary,
+a.button--primary,
+.ui-button--primary,
+.ui-button.ui-state-default--primary {
+	background-color: #2aac4a;
+	color: #fff;
+	border-color: #2aac4a;
+}
+
+.button--primary:hover,
+a.button--primary:hover,
+.ui-button--primary:hover,
+.ui-button.ui-state-default--primary:hover {
+	border-color: #33bd55;
+	background-color: #33bd55;
+	color: #fff;
+}
+
+.button--primary:active,
+.active .button--primary,
+a.button--primary:active,
+.active a.button--primary,
+.ui-button--primary:active,
+.active .ui-button--primary,
+.ui-button.ui-state-default--primary:active,
+.active .ui-button.ui-state-default--primary {
+	border-color: #259541;
+	background-color: #259541;
+	color: #fff;
+}
+
+.button--primary:disabled,
+.button--primary[disabled],
+.button--primary.disabled,
+a.button--primary:disabled,
+a.button--primary[disabled],
+a.button--primary.disabled,
+.ui-button--primary:disabled,
+.ui-button--primary[disabled],
+.ui-button--primary.disabled,
+.ui-button.ui-state-default--primary:disabled,
+.ui-button.ui-state-default--primary[disabled],
+.ui-button.ui-state-default--primary.disabled {
+	border-color: #c9ced4;
+	background-color: #c9ced4;
+	color: #fff;
+}
+
+.button--plus:before,
+a.button--plus:before,
+.ui-button--plus:before,
+.ui-button.ui-state-default--plus:before {
+	content: "";
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background: url(/eXoResources/skin/GostSkin/GostCss/../GostImages/plus.png) center center no-repeat transparent;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.button--rotate:active,
+.active .button--rotate,
+a.button--rotate:active,
+.active a.button--rotate,
+.ui-button--rotate:active,
+.active .ui-button--rotate,
+.ui-button.ui-state-default--rotate:active,
+.active .ui-button.ui-state-default--rotate {
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.button--rotate svg,
+a.button--rotate svg,
+.ui-button--rotate svg,
+.ui-button.ui-state-default--rotate svg {
+	position: relative;
+}
+
+.button--inner,
+a.button--inner,
+.ui-button--inner,
+.ui-button.ui-state-default--inner {
+	min-width: 0;
+	padding: 10px;
+	border-color: transparent;
+	width: 50px;
+	height: 100%;
+}
+
+.button--inner:hover,
+a.button--inner:hover,
+.ui-button--inner:hover,
+.ui-button.ui-state-default--inner:hover {
+	border-color: transparent;
+}
+
+.button--inner:active,
+.active .button--inner,
+a.button--inner:active,
+.active a.button--inner,
+.ui-button--inner:active,
+.active .ui-button--inner,
+.ui-button.ui-state-default--inner:active,
+.active .ui-button.ui-state-default--inner {
+	border-color: transparent;
+}
+
+.button--inner:disabled,
+.button--inner[disabled],
+.button--inner--disabled,
+.button--inner .disabled,
+a.button--inner:disabled,
+a.button--inner[disabled],
+a.button--inner--disabled,
+a.button--inner .disabled,
+.ui-button--inner:disabled,
+.ui-button--inner[disabled],
+.ui-button--inner--disabled,
+.ui-button--inner .disabled,
+.ui-button.ui-state-default--inner:disabled,
+.ui-button.ui-state-default--inner[disabled],
+.ui-button.ui-state-default--inner--disabled,
+.ui-button.ui-state-default--inner .disabled {
+	border-color: transparent;
+}
+
+.button--icon,
+a.button--icon,
+.ui-button--icon,
+.ui-button.ui-state-default--icon {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	width: 54px;
+	height: 54px;
+	min-width: 0;
+	padding: 14px;
+	-webkit-box-shadow: 0 2px 12px 0 rgba(212, 212, 214, 0.55);
+	box-shadow: 0 2px 12px 0 rgba(212, 212, 214, 0.55);
+	border: solid 1px #ebebeb;
+}
+
+.button--icon:hover,
+a.button--icon:hover,
+.ui-button--icon:hover,
+.ui-button.ui-state-default--icon:hover {
+	border-color: #ebebeb;
+}
+
+.button--icon:active,
+.active .button--icon,
+a.button--icon:active,
+.active a.button--icon,
+.ui-button--icon:active,
+.active .ui-button--icon,
+.ui-button.ui-state-default--icon:active,
+.active .ui-button.ui-state-default--icon {
+	border-color: #ebebeb;
+}
+
+.button--icon:disabled,
+.button--icon[disabled],
+.button--icon .disabled,
+a.button--icon:disabled,
+a.button--icon[disabled],
+a.button--icon .disabled,
+.ui-button--icon:disabled,
+.ui-button--icon[disabled],
+.ui-button--icon .disabled,
+.ui-button.ui-state-default--icon:disabled,
+.ui-button.ui-state-default--icon[disabled],
+.ui-button.ui-state-default--icon .disabled {
+	border-color: #ebebeb;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	cursor: default;
+	pointer-events: none;
+}
+
+.button--icon-left,
+a.button--icon-left,
+.ui-button--icon-left,
+.ui-button.ui-state-default--icon-left {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.button--icon-left svg:first-of-type,
+a.button--icon-left svg:first-of-type,
+.ui-button--icon-left svg:first-of-type,
+.ui-button.ui-state-default--icon-left svg:first-of-type {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.button--icon-right,
+a.button--icon-right,
+.ui-button--icon-right,
+.ui-button.ui-state-default--icon-right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+}
+
+.button--icon-right svg:last-of-type,
+a.button--icon-right svg:last-of-type,
+.ui-button--icon-right svg:last-of-type,
+.ui-button.ui-state-default--icon-right svg:last-of-type {
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+}
