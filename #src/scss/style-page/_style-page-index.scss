@@ -72,6 +72,7 @@
 			}
 
 			& > g:hover {
+				cursor: pointer;
 				&.--green {
 					& path {
 						fill: rgba(42, 172, 74, 0.5);
@@ -86,6 +87,7 @@
 			}
 
 			& > path:hover {
+				cursor: pointer;
 				&.--green {
 					fill: rgba(42, 172, 74, 0.5);
 				}
@@ -341,6 +343,14 @@
 		color: #2aac4a;
 		border: 1px solid #2aac4a;
 		border-radius: 100px;
+		transition: all 0.3s ease;
+		&:not(.disabled):hover {
+			border-color: #33bd55;
+			color: #33bd55;
+			&::before {
+				filter: brightness(1.1);
+			}
+		}
 
 		&:not(:last-child) {
 			margin-right: 20px;
@@ -355,6 +365,7 @@
 			width: 20px;
 			height: 7px;
 			background: url("../img/icon-arrow.png") no-repeat center / contain;
+			transition: all 0.3s ease;
 		}
 
 		&.disabled {
@@ -417,6 +428,14 @@
 	border-bottom: 1px solid #d4d4d6;
 	&:first-child {
 		border-top: 1px solid #d4d4d6;
+	}
+
+	&:hover {
+		& .item-data__name {
+			&::before {
+				filter: brightness(1.1);
+			}
+		}
 	}
 
 	&.--archive {

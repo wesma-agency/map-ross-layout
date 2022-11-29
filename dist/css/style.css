@@ -156,7 +156,13 @@ h1 {
   color: #2aac4a;
   border: 1px solid #2aac4a;
   border-radius: 100px;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .main-btn:hover {
+    border-color: #33bd55;
+    color: #33bd55; }
 
 .button,
 a.button,
@@ -1301,14 +1307,18 @@ a.button--icon-right svg:last-of-type,
     fill: #2aac4a; }
   .tab__svg-map svg g.--red path {
     fill: #7c1a27; }
-  .tab__svg-map svg > g:hover.--green path {
-    fill: rgba(42, 172, 74, 0.5); }
-  .tab__svg-map svg > g:hover.--red path {
-    fill: rgba(124, 26, 39, 0.5); }
-  .tab__svg-map svg > path:hover.--green {
-    fill: rgba(42, 172, 74, 0.5); }
-  .tab__svg-map svg > path:hover.--red {
-    fill: rgba(124, 26, 39, 0.5); }
+  .tab__svg-map svg > g:hover {
+    cursor: pointer; }
+    .tab__svg-map svg > g:hover.--green path {
+      fill: rgba(42, 172, 74, 0.5); }
+    .tab__svg-map svg > g:hover.--red path {
+      fill: rgba(124, 26, 39, 0.5); }
+  .tab__svg-map svg > path:hover {
+    cursor: pointer; }
+    .tab__svg-map svg > path:hover.--green {
+      fill: rgba(42, 172, 74, 0.5); }
+    .tab__svg-map svg > path:hover.--red {
+      fill: rgba(124, 26, 39, 0.5); }
   .tab__svg-map svg path.selected.--green {
     fill: #2aac4a !important; }
   .tab__svg-map svg path.selected.--red {
@@ -1481,7 +1491,16 @@ a.button--icon-right svg:last-of-type,
     letter-spacing: 0.04em;
     color: #2aac4a;
     border: 1px solid #2aac4a;
-    border-radius: 100px; }
+    border-radius: 100px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .virsion-data__btn:not(.disabled):hover {
+      border-color: #33bd55;
+      color: #33bd55; }
+      .virsion-data__btn:not(.disabled):hover::before {
+        -webkit-filter: brightness(1.1);
+                filter: brightness(1.1); }
     .virsion-data__btn:not(:last-child) {
       margin-right: 20px; }
     .virsion-data__btn::before {
@@ -1494,7 +1513,10 @@ a.button--icon-right svg:last-of-type,
               transform: translate(0, -50%);
       width: 20px;
       height: 7px;
-      background: url("../img/icon-arrow.png") no-repeat center/contain; }
+      background: url("../img/icon-arrow.png") no-repeat center/contain;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
     .virsion-data__btn.disabled {
       cursor: initial;
       color: rgba(51, 51, 51, 0.3);
@@ -1541,6 +1563,9 @@ a.button--icon-right svg:last-of-type,
   border-bottom: 1px solid #d4d4d6; }
   .item-data:first-child {
     border-top: 1px solid #d4d4d6; }
+  .item-data:hover .item-data__name::before {
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1); }
   .item-data.--archive .item-data__row {
     grid-template-columns: 1fr 0.8fr; }
   .item-data.--archive .item-data__value {

@@ -52,6 +52,11 @@ h1 {
 	border: 1px solid #2aac4a;
 	border-radius: 100px;
 	text-align: center;
+	transition: all 0.3s ease;
+	&:hover {
+		border-color: #33bd55;
+		color: #33bd55;
+	}
 }
 
 .button,
