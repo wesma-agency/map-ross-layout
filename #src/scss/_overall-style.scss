@@ -59,6 +59,17 @@ h1 {
 	}
 }
 
+@media (max-width: 1170px) {
+	.container {
+		padding: 0 12px;
+	}
+
+	.title-h1,
+	h1 {
+		font-size: 30px;
+	}
+}
+
 .button,
 a.button,
 .ui-button,

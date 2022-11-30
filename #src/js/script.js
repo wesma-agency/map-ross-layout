@@ -108,8 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	document.addEventListener("click", function (e) {
 		let target = e.target;
-		if (!target.closest(".js-open-popup-info") && openPopupInfo.classList.contains("show")) {
-			closePopup();
+		if (openPopupInfo != null) {
+			if (!target.closest(".js-open-popup-info") && openPopupInfo.classList.contains("show")) {
+				closePopup();
+			}
 		}
 	});
 
