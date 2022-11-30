@@ -1653,6 +1653,7 @@ a.button--icon-right svg:last-of-type,
     color: rgba(51, 51, 51, 0.5); }
 
 .region-mobile {
+  display: none;
   margin-top: 30px; }
   .region-mobile__search {
     position: relative;
@@ -1830,7 +1831,9 @@ a.button--icon-right svg:last-of-type,
       font-size: 18px; }
     .item-data.--archive .item-data__row {
       grid-template-columns: 1fr 0.9fr;
-      gap: 10px; } }
+      gap: 10px; }
+  .region-mobile {
+    display: block; } }
 
 .footer__row.--first {
   background-color: #fafafa;

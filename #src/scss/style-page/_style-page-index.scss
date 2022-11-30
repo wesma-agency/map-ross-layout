@@ -532,6 +532,7 @@
 }
 
 .region-mobile {
+	display: none;
 	margin-top: 30px;
 	&__search {
 		position: relative;
@@ -744,5 +745,9 @@
 			grid-template-columns: 1fr 0.9fr;
 			gap: 10px;
 		}
+	}
+
+	.region-mobile {
+		display: block;
 	}
 }
