@@ -51,23 +51,55 @@
 			height: 100%;
 			& path {
 				&.--green {
-					fill: rgba(42, 172, 74, 1);
+					fill: rgba(148, 213, 164, 1);
 				}
 
 				&.--red {
-					fill: rgba(124, 26, 39, 1);
+					fill: rgba(189, 140, 147, 1);
+				}
+
+				&.--empty {
+					fill: rgba(235, 235, 235, 1);
+				}
+
+				&.--orange {
+					fill: rgba(229, 191, 148, 1);
+				}
+
+				&.--red-bright {
+					fill: rgba(209, 149, 155, 1);
 				}
 			}
 
-			& g.--green {
-				& path {
-					fill: rgba(42, 172, 74, 1);
+			& g {
+				&.--green {
+					& path {
+						fill: rgba(148, 213, 164, 1);
+					}
 				}
-			}
 
-			& g.--red {
-				& path {
-					fill: rgba(124, 26, 39, 1);
+				&.--red {
+					& path {
+						fill: rgba(189, 140, 147, 1);
+					}
+				}
+
+				&.--orange {
+					& path {
+						fill: rgba(229, 191, 148, 1);
+					}
+				}
+
+				&.--empty {
+					& path {
+						fill: rgba(235, 235, 235, 1);
+					}
+				}
+
+				&.--red-bright {
+					& path {
+						fill: rgba(209, 149, 155, 1);
+					}
 				}
 			}
 
@@ -75,13 +107,25 @@
 				cursor: pointer;
 				&.--green {
 					& path {
-						fill: rgba(42, 172, 74, 0.5);
+						fill: rgba(148, 213, 164, 0.5);
 					}
 				}
 
 				&.--red {
 					& path {
-						fill: rgba(124, 26, 39, 0.5);
+						fill: rgba(189, 140, 147, 0.5);
+					}
+				}
+
+				&.--orange {
+					& path {
+						fill: rgba(229, 191, 148, 0.5);
+					}
+				}
+
+				&.--red-bright {
+					& path {
+						fill: rgba(209, 149, 155, 0.5);
 					}
 				}
 			}
@@ -89,34 +133,62 @@
 			& > path:hover {
 				cursor: pointer;
 				&.--green {
-					fill: rgba(42, 172, 74, 0.5);
+					fill: rgba(148, 213, 164, 0.5);
 				}
 
 				&.--red {
-					fill: rgba(124, 26, 39, 0.5);
+					fill: rgba(189, 140, 147, 0.5);
+				}
+
+				&.--orange {
+					fill: rgba(229, 191, 148, 0.5);
+				}
+
+				&.--red-bright {
+					fill: rgba(209, 149, 155, 0.5);
 				}
 			}
 
 			& path.selected {
 				&.--green {
-					fill: rgba(42, 172, 74, 1) !important;
+					fill: rgba(148, 213, 164, 1) !important;
 				}
 
 				&.--red {
-					fill: rgba(124, 26, 39, 1) !important;
+					fill: rgba(189, 140, 147, 1) !important;
+				}
+
+				&.--orange {
+					fill: rgba(229, 191, 148, 1) !important;
+				}
+
+				&.--red-bright {
+					fill: rgba(209, 149, 155, 1) !important;
 				}
 			}
 
 			& g.selected {
 				&.--green {
 					& path {
-						fill: rgba(42, 172, 74, 1) !important;
+						fill: rgba(148, 213, 164, 1) !important;
 					}
 				}
 
 				&.--red {
 					& path {
-						fill: rgba(124, 26, 39, 1) !important;
+						fill: rgba(189, 140, 147, 1) !important;
+					}
+				}
+
+				&.--orange {
+					& path {
+						fill: rgba(229, 191, 148, 1) !important;
+					}
+				}
+
+				&.--red-bright {
+					& path {
+						fill: rgba(209, 149, 155, 1) !important;
 					}
 				}
 			}
@@ -126,7 +198,7 @@
 			pointer-events: none;
 			& svg {
 				& path {
-					fill: rgba(204, 204, 204, 0.9) !important;
+					fill: rgba(235, 235, 235, 1) !important;
 				}
 			}
 		}
@@ -141,6 +213,9 @@
 		align-items: center;
 		margin-right: 20px;
 		margin-bottom: 10px;
+		&:last-child {
+			width: 100%;
+		}
 	}
 
 	&__icon {
@@ -149,11 +224,23 @@
 		height: 8px;
 		border-radius: 10px;
 		&.--green {
-			background: #6ac580;
+			background: #94d5a4;
 		}
 
 		&.--red {
-			background: #a35f68;
+			background: #bd8c93;
+		}
+
+		&.--red-bright {
+			background: #d1959b;
+		}
+
+		&.--empty {
+			background: #ebebeb;
+		}
+
+		&.--orange {
+			background: #e5bf94;
 		}
 	}
 
@@ -600,11 +687,23 @@
 		height: 8px;
 		border-radius: 10px;
 		&.--green {
-			background: #6ac580;
+			background: #94d5a4;
 		}
 
 		&.--red {
-			background: #a35f68;
+			background: #bd8c93;
+		}
+
+		&.--red-bright {
+			background: #d1959b;
+		}
+
+		&.--empty {
+			background: #ebebeb;
+		}
+
+		&.--orange {
+			background: #e5bf94;
 		}
 	}
 
@@ -673,8 +772,26 @@
 			padding-bottom: 40px;
 		}
 
+		&__svg-map-scroll {
+			overflow: auto;
+			padding: 10px 0;
+			margin: 0 -12px 30px -12px;
+			&::-webkit-scrollbar {
+				height: 6px;
+			}
+			&::-webkit-scrollbar-track {
+				background: #d4d4d6;
+				border: 2px solid #fff;
+			}
+			&::-webkit-scrollbar-thumb {
+				background: #2aac4a;
+				border-radius: 6px;
+			}
+		}
+
 		&__svg-map-item {
-			display: none;
+			min-width: 1000px;
+			// display: none;
 		}
 
 		&__controls {

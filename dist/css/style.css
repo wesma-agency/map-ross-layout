@@ -1307,38 +1307,66 @@ a.button--icon-right svg:last-of-type,
   width: 100%;
   height: 100%; }
   .tab__svg-map svg path.--green {
-    fill: #2aac4a; }
+    fill: #94d5a4; }
   .tab__svg-map svg path.--red {
-    fill: #7c1a27; }
+    fill: #bd8c93; }
+  .tab__svg-map svg path.--empty {
+    fill: #ebebeb; }
+  .tab__svg-map svg path.--orange {
+    fill: #e5bf94; }
+  .tab__svg-map svg path.--red-bright {
+    fill: #d1959b; }
   .tab__svg-map svg g.--green path {
-    fill: #2aac4a; }
+    fill: #94d5a4; }
   .tab__svg-map svg g.--red path {
-    fill: #7c1a27; }
+    fill: #bd8c93; }
+  .tab__svg-map svg g.--orange path {
+    fill: #e5bf94; }
+  .tab__svg-map svg g.--empty path {
+    fill: #ebebeb; }
+  .tab__svg-map svg g.--red-bright path {
+    fill: #d1959b; }
   .tab__svg-map svg > g:hover {
     cursor: pointer; }
     .tab__svg-map svg > g:hover.--green path {
-      fill: rgba(42, 172, 74, 0.5); }
+      fill: rgba(148, 213, 164, 0.5); }
     .tab__svg-map svg > g:hover.--red path {
-      fill: rgba(124, 26, 39, 0.5); }
+      fill: rgba(189, 140, 147, 0.5); }
+    .tab__svg-map svg > g:hover.--orange path {
+      fill: rgba(229, 191, 148, 0.5); }
+    .tab__svg-map svg > g:hover.--red-bright path {
+      fill: rgba(209, 149, 155, 0.5); }
   .tab__svg-map svg > path:hover {
     cursor: pointer; }
     .tab__svg-map svg > path:hover.--green {
-      fill: rgba(42, 172, 74, 0.5); }
+      fill: rgba(148, 213, 164, 0.5); }
     .tab__svg-map svg > path:hover.--red {
-      fill: rgba(124, 26, 39, 0.5); }
+      fill: rgba(189, 140, 147, 0.5); }
+    .tab__svg-map svg > path:hover.--orange {
+      fill: rgba(229, 191, 148, 0.5); }
+    .tab__svg-map svg > path:hover.--red-bright {
+      fill: rgba(209, 149, 155, 0.5); }
   .tab__svg-map svg path.selected.--green {
-    fill: #2aac4a !important; }
+    fill: #94d5a4 !important; }
   .tab__svg-map svg path.selected.--red {
-    fill: #7c1a27 !important; }
+    fill: #bd8c93 !important; }
+  .tab__svg-map svg path.selected.--orange {
+    fill: #e5bf94 !important; }
+  .tab__svg-map svg path.selected.--red-bright {
+    fill: #d1959b !important; }
   .tab__svg-map svg g.selected.--green path {
-    fill: #2aac4a !important; }
+    fill: #94d5a4 !important; }
   .tab__svg-map svg g.selected.--red path {
-    fill: #7c1a27 !important; }
+    fill: #bd8c93 !important; }
+  .tab__svg-map svg g.selected.--orange path {
+    fill: #e5bf94 !important; }
+  .tab__svg-map svg g.selected.--red-bright path {
+    fill: #d1959b !important; }
 
 .tab__svg-map.region-select {
   pointer-events: none; }
   .tab__svg-map.region-select svg path {
-    fill: rgba(204, 204, 204, 0.9) !important; }
+    fill: #ebebeb !important; }
 
 .legend-map {
   display: -webkit-box;
@@ -1355,15 +1383,23 @@ a.button--icon-right svg:last-of-type,
             align-items: center;
     margin-right: 20px;
     margin-bottom: 10px; }
+    .legend-map__item:last-child {
+      width: 100%; }
   .legend-map__icon {
     margin-right: 10px;
     width: 25px;
     height: 8px;
     border-radius: 10px; }
     .legend-map__icon.--green {
-      background: #6ac580; }
+      background: #94d5a4; }
     .legend-map__icon.--red {
-      background: #a35f68; }
+      background: #bd8c93; }
+    .legend-map__icon.--red-bright {
+      background: #d1959b; }
+    .legend-map__icon.--empty {
+      background: #ebebeb; }
+    .legend-map__icon.--orange {
+      background: #e5bf94; }
   .legend-map__value {
     font-weight: 400;
     font-size: 18px;
@@ -1720,9 +1756,15 @@ a.button--icon-right svg:last-of-type,
     height: 8px;
     border-radius: 10px; }
     .region-mobile__icon.--green {
-      background: #6ac580; }
+      background: #94d5a4; }
     .region-mobile__icon.--red {
-      background: #a35f68; }
+      background: #bd8c93; }
+    .region-mobile__icon.--red-bright {
+      background: #d1959b; }
+    .region-mobile__icon.--empty {
+      background: #ebebeb; }
+    .region-mobile__icon.--orange {
+      background: #e5bf94; }
 
 @media (max-width: 768px) {
   .map__wrap {
@@ -1770,8 +1812,20 @@ a.button--icon-right svg:last-of-type,
   .tab__map-svg-wrapper {
     position: initial;
     padding-bottom: 40px; }
+  .tab__svg-map-scroll {
+    overflow: auto;
+    padding: 10px 0;
+    margin: 0 -12px 30px -12px; }
+    .tab__svg-map-scroll::-webkit-scrollbar {
+      height: 6px; }
+    .tab__svg-map-scroll::-webkit-scrollbar-track {
+      background: #d4d4d6;
+      border: 2px solid #fff; }
+    .tab__svg-map-scroll::-webkit-scrollbar-thumb {
+      background: #2aac4a;
+      border-radius: 6px; }
   .tab__svg-map-item {
-    display: none; }
+    min-width: 1000px; }
   .tab__controls {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

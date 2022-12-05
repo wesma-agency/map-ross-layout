@@ -91,6 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
 					this.classList.add("selected");
 					mapSvg != null ? mapSvg.classList.add("region-select") : null;
 					openPopupInfo != null ? openPopupInfo.classList.add("show") : null;
+					if (document.documentElement.clientWidth <= 768) {
+						window.scrollTo({
+							top: 0,
+						});
+					}
 				}, 100);
 			});
 		});
