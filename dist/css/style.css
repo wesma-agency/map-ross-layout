@@ -1889,6 +1889,51 @@ a.button--icon-right svg:last-of-type,
   .region-mobile {
     display: block; } }
 
+.map-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 450px;
+  width: 100%;
+  padding: 15px; }
+  .map-loader__wrap {
+    padding: 40px 30px 30px 30px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px; }
+  .map-loader__icon {
+    margin-bottom: 30px;
+    text-align: center; }
+    .map-loader__icon svg {
+      -webkit-animation: loader 1s linear infinite;
+              animation: loader 1s linear infinite; }
+  .map-loader__text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #333333; }
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 .footer__row.--first {
   background-color: #fafafa;
   color: #2c3756;
